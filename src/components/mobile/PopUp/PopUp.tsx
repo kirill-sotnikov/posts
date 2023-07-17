@@ -41,9 +41,7 @@ export const PopUp: FunctionComponent<PopUpProps> = ({
       style={{ top: posY }}
     >
       <div className={style.popUp}>
-        <div style={{ height: 230, position: "relative" }}>
-          <Image src={img_2x} alt="img" objectFit="cover" layout="fill" />
-        </div>
+        <img src={img_2x} alt="img" style={{ width: "100%" }} />
         <p className={style.tag}>{tags}</p>
         <p className={style.title}>{title}</p>
         <p className={style.info}>
