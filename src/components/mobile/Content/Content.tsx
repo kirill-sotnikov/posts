@@ -49,9 +49,11 @@ export const Content = () => {
                   item.title.toLocaleLowerCase().includes(search) ||
                   item.text.toLocaleLowerCase().includes(search)
               )
-              .map((item) => (
+              .map((item, index) => (
                 <Post
-                  style={{ margin: "32px 0 0 0" }}
+                  style={{
+                    margin: index === 0 ? "0 auto" : "32px auto 0 auto",
+                  }}
                   {...item}
                   key={item.img}
                 />
