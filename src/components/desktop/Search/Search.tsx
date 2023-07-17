@@ -26,12 +26,16 @@ export const Search: FunctionComponent<ComponentPropsWithoutRef<"input">> = ({
           src={cross}
           alt="cross"
           style={{ cursor: "pointer" }}
-          onClick={() => setIsActive(false)}
+          onClick={() => {
+            setIsActive(false);
+            setSearch("");
+          }}
         />
       )}
 
       {isActive && (
         <input
+          autoFocus
           onChange={(event) => {
             setSearch(event.currentTarget.value.toLocaleLowerCase());
             onChange && onChange(event);

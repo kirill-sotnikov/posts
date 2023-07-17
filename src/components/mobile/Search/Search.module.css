@@ -1,0 +1,24 @@
+.wrapper {
+  left: 0;
+  top: 88px;
+  left: 0px;
+  width: 100%;
+  z-index: 5;
+  display: flex;
+  padding: 5px 20px;
+  position: absolute;
+  align-items: center;
+  background-color: white;
+}
+
+.wrapper input {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  border-right: 1px solid lightgrey;
+}
+
+.wrapper img {
+  width: 10px;
+  margin-left: 6px;
+}

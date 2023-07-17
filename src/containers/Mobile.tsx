@@ -1,9 +1,17 @@
-import { Content, Header } from "../components/mobile";
+import { useState } from "react";
+import { Content, Header, Menu } from "../components/mobile";
 
 export const Mobile = () => {
+  const [isShowMenu, setIsShowMenu] = useState(false);
+
   return (
     <div>
-      <Header />
+      <Header
+        onClickMenu={() => {
+          setIsShowMenu(true);
+        }}
+      />
+      {isShowMenu && <Menu onClickCross={() => setIsShowMenu(false)} />}
       <Content />
     </div>
   );
