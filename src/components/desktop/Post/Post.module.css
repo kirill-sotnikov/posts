@@ -1,0 +1,57 @@
+.post p {
+  margin: 16px 0;
+}
+
+.post p:last-child {
+  margin: 0;
+  margin-top: 16;
+}
+
+.post {
+  width: 360px;
+  height: 459px;
+  margin: 0 20px;
+  margin-top: 3rem;
+  color: #000;
+  overflow: hidden;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.tag {
+  color: #eb0028;
+  font-size: 0.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 0.8rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5rem;
+}
+
+.info {
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 0.75rem;
+  display: flex;
+  align-items: center;
+}
+
+.info span {
+  color: #9b9b9b;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.description {
+  color: #929292;
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0.9rem;
+}
