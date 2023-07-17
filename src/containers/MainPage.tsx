@@ -8,7 +8,6 @@ export const MainPage = () => {
   useEffect(() => {
     if (window.innerWidth < 660) {
       setIsMobile(true);
-      console.log("mobile");
     }
   }, []);
 

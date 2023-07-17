@@ -34,7 +34,6 @@ export const PopUp: FunctionComponent<PopUpProps> = ({
       className={style.wrapper}
       onClick={(event) => {
         if (event.target === event.currentTarget) {
-          console.log("me");
           onClickOutside();
         }
       }}

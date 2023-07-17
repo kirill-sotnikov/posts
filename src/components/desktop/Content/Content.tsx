@@ -26,11 +26,7 @@ export const Content = () => {
       .get<Array<PostType>>(
         "https://cloud.codesupply.co/endpoint/react/data.json"
       )
-      .then((res) => {
-        console.log(res.data);
-
-        return res.data;
-      })
+      .then((res) => res.data)
   );
 
   if (error) {
