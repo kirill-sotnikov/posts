@@ -28,13 +28,14 @@ export const Post = memo<PostProps>(
   }) => {
     return (
       <div className={style.post} style={innerStyle} onClick={onClick}>
-        <Image
-          src={img}
-          alt="img"
-          style={{ objectFit: "cover" }}
-          width={imgWidth || 360}
-          height={imgHeight || 230}
-        />
+        <div style={{ height: 230, position: "relative" }}>
+          <Image
+            src={img}
+            alt="img"
+            style={{ objectFit: "cover" }}
+            layout="fill"
+          />
+        </div>
         <p className={style.tag}>{tag}</p>
         <p className={style.title}>{title}</p>
         <p className={style.info}>
