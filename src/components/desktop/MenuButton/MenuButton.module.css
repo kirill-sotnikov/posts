@@ -1,20 +1,20 @@
-.menuButton {
+.menu_button {
   position: relative;
   cursor: pointer;
   padding: 20px 0;
   margin-left: 32px;
 }
 
-.menuButton a {
+.menu_button a {
   display: flex;
   align-items: center;
 }
 
-.menuButton:first-child {
+.menu_button:first-child {
   margin-left: 0;
 }
 
-.menuButton ul {
+.menu_button ul {
   width: 176px;
   display: none;
   list-style: none;
@@ -26,11 +26,11 @@
   left: 0;
 }
 
-.menuButton:hover ul {
+.menu_button:hover ul {
   display: block;
 }
 
-.menuButton ul li {
+.menu_button ul li {
   color: #000;
   font-size: 0.8rem;
   font-weight: 400;
@@ -40,7 +40,7 @@
   justify-content: space-between;
 }
 
-.menuButton ul li:last-child {
+.menu_button ul li:last-child {
   border-bottom: none;
 }
 

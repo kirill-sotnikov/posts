@@ -10,7 +10,7 @@ interface MenuButton {
 
 export const MenuButton = memo<MenuButton>(({ children, dropdownMenu }) => {
   return (
-    <li className={style.menuButton}>
+    <li className={style.menu_button}>
       {children}
       {dropdownMenu && (
         <ul className={style.dropdown}>
