@@ -17,7 +17,9 @@ export const Search: FunctionComponent<SearchProps> = ({ onClickCross }) => {
         autoFocus
         placeholder="search"
         type="text"
-        onChange={(event) => setSearch(event.currentTarget.value)}
+        onChange={(event) =>
+          setSearch(event.currentTarget.value.toLocaleLowerCase())
+        }
       />
       <Image
         src={crossMobileMenu}
