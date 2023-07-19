@@ -32,7 +32,7 @@ export const Header = () => {
       className={style.header}
       style={
         isHide
-          ? { transition: "0.4s", top: -140 }
+          ? { transition: "0.4s", top: -141 }
           : { transition: "0.4s", top: 0 }
       }
     >
