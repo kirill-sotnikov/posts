@@ -6,7 +6,7 @@ export const MainPage = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    if (window.innerWidth < 660) {
+    if (window.innerWidth < 700) {
       setIsMobile(true);
     }
   }, []);

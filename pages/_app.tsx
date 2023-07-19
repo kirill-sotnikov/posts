@@ -6,7 +6,7 @@ import { SearchContextProvider } from "../src/searchContext";
 const queryClient = new QueryClient();
 
 const inter = Roboto({
-  weight: ["400", "700"],
+  weight: ["400", "500", "700"],
   style: ["normal", "italic"],
   subsets: ["latin"],
   display: "swap",
