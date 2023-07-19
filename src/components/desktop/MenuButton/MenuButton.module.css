@@ -1,79 +1,85 @@
-.menu_button {
-  color: #000;
-  height: fit-content;
-  cursor: pointer;
-  margin: 0;
-  border: 0;
-  padding: 0;
-  display: flex;
-  font-size: 1rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1rem;
-  align-items: center;
-  background-color: transparent;
-}
-
-.menu_button:hover ~ .drop_down_menu_wrapper {
-  visibility: visible;
-}
-
-.drop_down_menu_wrapper:hover {
-  visibility: visible;
-  z-index: 1;
-}
-
-.drop_down_menu_wrapper:hover ~ .drop_down_menu {
-  visibility: visible;
-  z-index: 2;
-}
-
-.wrapper {
+.menuButton {
   position: relative;
-  margin-left: 2rem;
+  cursor: pointer;
+  padding: 20px 0;
+  margin-left: 32px;
 }
 
-.drop_down_menu {
-  top: calc(1rem + 4px);
-  left: 0;
-  width: 100%;
-  padding: 20px;
+.menuButton a {
+  display: flex;
+  align-items: center;
+}
+
+.menuButton:first-child {
+  margin-left: 0;
+}
+
+.menuButton ul {
+  width: 176px;
+  display: none;
+  list-style: none;
   position: absolute;
-  z-index: 1;
   background-color: #fff;
   border: 1px solid #e9e9e9;
-}
-
-.drop_down_menu_wrapper {
-  visibility: hidden;
-  position: absolute;
-  z-index: 2;
-  top: 1rem;
+  padding: 20px;
+  top: calc(1rem + 43px);
   left: 0;
-  width: 173px;
-  height: 196px;
 }
 
-.drop_down_menu_wrapper a {
+.menuButton:hover ul {
+  display: block;
+}
+
+.menuButton ul li {
   color: #000;
   font-size: 0.8rem;
-  font-style: normal;
   font-weight: 400;
   line-height: 0.8rem;
-  padding: 8px 0;
-  border: none;
   border-bottom: 1px solid #e9e9e9;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  text-decoration: none;
 }
 
-.drop_down_menu_wrapper a:hover {
+.menuButton ul li:last-child {
+  border-bottom: none;
+}
+
+.dropdown {
+  transform-origin: top;
+  animation: 0.3s 1 cubic-bezier(0.22, 0.61, 0.36, 1) show;
+}
+
+.dropdown a {
+  font-weight: 400;
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 0.8rem;
+  padding: 8px 0;
+}
+
+.dropdown li a {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+  font-weight: 400;
+}
+
+.dropdown li a:hover {
   color: #969696;
   padding-left: 8px;
+  color: #969696;
 }
 
-.drop_down_menu_wrapper a:last-child {
-  border: none;
+@keyframes show {
+  0% {
+    transform: scaleY(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
 }
