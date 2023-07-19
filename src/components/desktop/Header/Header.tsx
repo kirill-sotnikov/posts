@@ -36,8 +36,8 @@ export const Header = () => {
           : { transition: "0.4s", top: 0 }
       }
     >
-      <div className={style.logoWrapper}>
-        <div className={style.logo}>
+      <div className={style.content_wrapper}>
+        <div className={style.content}>
           <Image
             src={logo}
             alt="logo"
